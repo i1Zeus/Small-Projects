@@ -27,7 +27,7 @@ class confettiCanon {
 
         //? add confetti
         this.confettiSpriteIds = [];
-        this.confettiSprite = {};
+        this.confettiSprite = {angle: 0,};
 
         //? vector line representing the firing angle
         this.drawVector = false;
@@ -81,7 +81,7 @@ class confettiCanon {
         clearTimeout(this.timer);
         this.pointer.x = e.clientX * this.dpr;
         this.pointer.y = e.clientY * this.dpr;
-        this.vector[0] = { x, y };
+        this.vector[0] = { x: this.pointer.x, y: this.pointer.y };
         this.drawVector = true;
     }
 
