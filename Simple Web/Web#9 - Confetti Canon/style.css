@@ -1,0 +1,35 @@
+body {
+    margin: 0%;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+}
+
+#canvas {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#658ae9, #1a4ebe);
+}
+.copy {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    font-family: "future", "helvetica neue", helvetica, arial, sans-serif;
+    color: #333;
+}
+h1 {
+    margin: 0;
+    color: white;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-size: 7vmin;
+    font-weight: 700;
+}
+p {
+    margin: 0;
+    font-weight: 800;
+    opacity: 0.8;
+}
