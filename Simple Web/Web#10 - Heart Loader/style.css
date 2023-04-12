@@ -8,10 +8,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* comment this for another effect */
-/* .container .preloader {
+/* ? comment this for another effect */
+.container .preloader {
   animation: rotate 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
-} */
+}
 @keyframes rotate {
   50% {
     transform: rotate(360deg);
