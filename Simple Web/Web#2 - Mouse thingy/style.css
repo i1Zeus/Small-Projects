@@ -1,71 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap");
 :root {
-    --firstOne: #fc6076;
-    --secondOne: #ff9a44;
+  --firstOne: #fc6076;
+  --secondOne: #ff9a44;
 }
 body {
-    background-color: #1e1e1e;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: "Changa", sans-serif;
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Changa", sans-serif;
+  pointer-events: none;
 }
 section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  pointer-events: none;
+  margin-top: 50px;
 }
 
 #circle {
-    background: linear-gradient(to right, var(--firstOne), var(--secondOne));
-    animation: spin 2s linear infinite;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    opacity: 50%;
-    filter: blur(100px);
+  background: linear-gradient(to right, var(--firstOne), var(--secondOne));
+  animation: spin 2s linear infinite;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  opacity: 50%;
+  filter: blur(100px);
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg) scale(1);
-        background: linear-gradient(
-            to bottom right,
-            var(--firstOne),
-            var(--secondOne)
-        );
-    }
-    50% {
-        transform: rotate(180deg) scale(1.5, 1);
-        background: linear-gradient(
-            to bottom right,
-            var(--secondOne),
-            var(--firstOne)
-        );
-    }
-    75% {
-        transform: rotate(180deg) scale(1, 1.5);
-        background: linear-gradient(
-            to bottom right,
-            var(--firstOne),
-            var(--secondOne)
-        );
-    }
-    100% {
-        transform: rotate(360deg) scale(1);
-        background: linear-gradient(
-            to bottom right,
-            var(--secondOne),
-            var(--firstOne)
-        );
-    }
+  0% {
+    transform: rotate(0deg);
+    background: linear-gradient(
+      to bottom right,
+      var(--firstOne),
+      var(--secondOne)
+    );
+  }
+  50% {
+    transform: rotate(180deg);
+    background: linear-gradient(
+      to bottom right,
+      var(--secondOne),
+      var(--firstOne)
+    );
+  }
+  75% {
+    transform: rotate(180deg);
+    background: linear-gradient(
+      to bottom right,
+      var(--firstOne),
+      var(--secondOne)
+    );
+  }
+  100% {
+    transform: rotate(360deg);
+    background: linear-gradient(
+      to bottom right,
+      var(--secondOne),
+      var(--firstOne)
+    );
+  }
 }
